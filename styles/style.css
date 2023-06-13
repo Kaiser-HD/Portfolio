@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;700&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.menu {
+    width: 80vw;
+    height: 80px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+
+    & p {
+        height: 80%;
+        padding: 0 25px;
+        border-radius: 15px;
+        background-color: white;
+        color: black;
+        border: 3px solid white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & p:hover {
+        color: white;
+        background-color: black;
+        border: 3px solid white;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+}
+
+.container {
+    background-color: white;
+    width: 80vw;
+    height: 60vh;
+    border-radius: 50px;
+    display: flex;
+
+    & > div {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h1 {
+        font-size: 40px;
+        font-family: 'Permanent Marker', cursive;
+    }
+}
+
+.frase {
+    margin: 40px 0 0 0;
+    height: 50px;
+    font-weight: 700;
+    & p {
+        text-align: center;
+    }
+}
+.container2 {
+    & .perfil {
+        width: 70%;
+        border-radius: 50%;
+    }
+}
+
+.none {
+    display: none;
+}
